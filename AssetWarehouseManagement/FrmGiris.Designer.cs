@@ -1,6 +1,6 @@
 ﻿namespace AssetWarehouseManagement
 {
-    partial class Form1
+    partial class FrmGiris
     {
         /// <summary>
         /// Required designer variable.

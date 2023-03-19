@@ -1,6 +1,6 @@
 ﻿namespace AssetWarehouseManagement
 {
-    partial class Form2
+    partial class FrmVarlıkListeleme
     {
         /// <summary>
         /// Required designer variable.
@@ -38,12 +38,14 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblRole = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 75);
+            this.label1.Location = new System.Drawing.Point(19, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 16);
             this.label1.TabIndex = 1;
@@ -52,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(157, 75);
+            this.label2.Location = new System.Drawing.Point(143, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 16);
             this.label2.TabIndex = 2;
@@ -61,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(387, 75);
+            this.label3.Location = new System.Drawing.Point(324, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 16);
             this.label3.TabIndex = 3;
@@ -114,20 +116,40 @@
             this.columnHeader6.Text = "Modeli";
             this.columnHeader6.Width = 124;
             // 
-            // Form2
+            // lblRole
+            // 
+            this.lblRole.AutoSize = true;
+            this.lblRole.Location = new System.Drawing.Point(754, 45);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(40, 16);
+            this.lblRole.TabIndex = 9;
+            this.lblRole.Text = "Role";
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Location = new System.Drawing.Point(754, 20);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(81, 16);
+            this.lblUserName.TabIndex = 8;
+            this.lblUserName.Text = "UserName";
+            // 
+            // FrmVarlıkListeleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(864, 548);
+            this.Controls.Add(this.lblRole);
+            this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.lstListeleme);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "FrmVarlıkListeleme";
+            this.Text = "Listeleme";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -145,5 +167,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.Label lblUserName;
     }
 }

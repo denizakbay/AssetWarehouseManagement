@@ -1,4 +1,5 @@
 ﻿using AssetWarehouseManagement.DAL.IRepos;
+using AssetWarehouseManagement.DAL.Repos;
 using AssetWarehouseManagement.DTO;
 using AssetWarehouseManagement.Provider;
 using System;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace AssetWarehouseManagement.DAL
 {
-    public class UserDAL : ISelectRepo<UserDTO>
+    public class UserDAL : MyBaseRepo<UserDTO>
     {
         public UserDTO Get(string userName, string password)
         {
@@ -32,9 +33,10 @@ namespace AssetWarehouseManagement.DAL
             while (reader.Read())
             {
 
-                string name = reader.GetString(1); // Assumes the second column of the result set is a string name
-                userDTO.UserName = name;
-                Debug.WriteLine(name);
+                 
+                userDTO.UserName = (string)reader["UserName"];
+                userDTO.UserID = (int)reader["UserID"];
+                userDTO.Role = (string)reader["Role"];
 
             }
 

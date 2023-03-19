@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="FrmVarlıkListeleme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="FrmVarlıkListeleme.Designer.cs">
+      <DependentUpon>FrmVarlıkListeleme.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDuyuru.cs">
       <SubType>Form</SubType>
@@ -64,19 +64,40 @@
     <Compile Include="FrmDuyuru.Designer.cs">
       <DependentUpon>FrmDuyuru.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFiltreListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiltreListe.Designer.cs">
+      <DependentUpon>FrmFiltreListe.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSıkSorulanSorular.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmSıkSorulanSorular.Designer.cs">
       <DependentUpon>FrmSıkSorulanSorular.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVarlıkGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVarlıkGuncelle.Designer.cs">
+      <DependentUpon>FrmVarlıkGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVarlıkTuket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVarlıkTuket.Designer.cs">
+      <DependentUpon>FrmVarlıkTuket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmGiris.resx">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="FrmVarlıkGuncelle.resx">
+      <DependentUpon>FrmVarlıkGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVarlıkListeleme.resx">
+      <DependentUpon>FrmVarlıkListeleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

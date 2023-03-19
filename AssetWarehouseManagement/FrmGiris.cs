@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace AssetWarehouseManagement
 {
-    public partial class Form1 : Form
+    public partial class FrmGiris : Form
     {
-        public Form1()
+        public FrmGiris()
         {
             InitializeComponent();
         }
@@ -34,7 +34,7 @@ namespace AssetWarehouseManagement
             {
                 MessageBox.Show("Basarili");
 
-                Form2 frm = new Form2();
+                FrmVarlıkListeleme frm = new FrmVarlıkListeleme(userDTO);
                 frm.Show();
             }
             else
