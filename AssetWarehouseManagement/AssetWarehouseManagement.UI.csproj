@@ -93,6 +93,9 @@
     <EmbeddedResource Include="FrmGiris.resx">
       <DependentUpon>FrmGiris.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmSıkSorulanSorular.resx">
+      <DependentUpon>FrmSıkSorulanSorular.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmVarlıkGuncelle.resx">
       <DependentUpon>FrmVarlıkGuncelle.cs</DependentUpon>
     </EmbeddedResource>
