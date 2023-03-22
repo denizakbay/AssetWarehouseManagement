@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnnouncementsDAL.cs" />
     <Compile Include="AssetDAL.cs" />
     <Compile Include="IRepos\IRepository.cs" />
     <Compile Include="IRepos\ISelectRepo.cs" />

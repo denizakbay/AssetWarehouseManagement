@@ -40,6 +40,8 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblRole = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
+            this.btnSSS = new System.Windows.Forms.Button();
+            this.btnDuyurular = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +49,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(19, 107);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 16);
+            this.label1.Size = new System.Drawing.Size(99, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Varliklarim";
             // 
@@ -56,7 +58,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(143, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 16);
+            this.label2.Size = new System.Drawing.Size(161, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Ekibimin Varliklari";
             // 
@@ -65,7 +67,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(324, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 16);
+            this.label3.Size = new System.Drawing.Size(121, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Tum Varliklar";
             // 
@@ -78,10 +80,11 @@
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
+            this.lstListeleme.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lstListeleme.HideSelection = false;
-            this.lstListeleme.Location = new System.Drawing.Point(-2, 173);
+            this.lstListeleme.Location = new System.Drawing.Point(0, 217);
             this.lstListeleme.Name = "lstListeleme";
-            this.lstListeleme.Size = new System.Drawing.Size(868, 374);
+            this.lstListeleme.Size = new System.Drawing.Size(1032, 516);
             this.lstListeleme.TabIndex = 5;
             this.lstListeleme.UseCompatibleStateImageBehavior = false;
             this.lstListeleme.View = System.Windows.Forms.View.Details;
@@ -104,7 +107,7 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "Urun Guncel Fiyati";
-            this.columnHeader4.Width = 158;
+            this.columnHeader4.Width = 225;
             // 
             // columnHeader5
             // 
@@ -119,27 +122,49 @@
             // lblRole
             // 
             this.lblRole.AutoSize = true;
-            this.lblRole.Location = new System.Drawing.Point(754, 45);
+            this.lblRole.Location = new System.Drawing.Point(856, 60);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(40, 16);
+            this.lblRole.Size = new System.Drawing.Size(47, 20);
             this.lblRole.TabIndex = 9;
             this.lblRole.Text = "Role";
             // 
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(754, 20);
+            this.lblUserName.Location = new System.Drawing.Point(856, 20);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(81, 16);
+            this.lblUserName.Size = new System.Drawing.Size(97, 20);
             this.lblUserName.TabIndex = 8;
             this.lblUserName.Text = "UserName";
             // 
+            // btnSSS
+            // 
+            this.btnSSS.Location = new System.Drawing.Point(644, 32);
+            this.btnSSS.Name = "btnSSS";
+            this.btnSSS.Size = new System.Drawing.Size(52, 52);
+            this.btnSSS.TabIndex = 10;
+            this.btnSSS.Text = "?";
+            this.btnSSS.UseVisualStyleBackColor = true;
+            this.btnSSS.Click += new System.EventHandler(this.btnSSS_Click);
+            // 
+            // btnDuyurular
+            // 
+            this.btnDuyurular.Location = new System.Drawing.Point(721, 37);
+            this.btnDuyurular.Name = "btnDuyurular";
+            this.btnDuyurular.Size = new System.Drawing.Size(90, 43);
+            this.btnDuyurular.TabIndex = 11;
+            this.btnDuyurular.Text = "Duyuru";
+            this.btnDuyurular.UseVisualStyleBackColor = true;
+            this.btnDuyurular.Click += new System.EventHandler(this.btnDuyurular_Click);
+            // 
             // FrmVarlıkListeleme
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(864, 548);
+            this.ClientSize = new System.Drawing.Size(1032, 733);
+            this.Controls.Add(this.btnDuyurular);
+            this.Controls.Add(this.btnSSS);
             this.Controls.Add(this.lblRole);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.lstListeleme);
@@ -169,5 +194,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.Button btnSSS;
+        private System.Windows.Forms.Button btnDuyurular;
     }
 }

@@ -41,6 +41,8 @@ namespace AssetWarehouseManagement
             lvi.SubItems.Add(item.Model);
             lstListeleme.Items.Add(lvi);
             }
+            lstListeleme.View = View.Details;
+            lstListeleme.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
 
         }
@@ -51,6 +53,17 @@ namespace AssetWarehouseManagement
 
         }
 
+        private void btnSSS_Click(object sender, EventArgs e)
+        {
+           FrmSıkSorulanSorular frmsss = new FrmSıkSorulanSorular();
+            frmsss.Show();
 
+        }
+
+        private void btnDuyurular_Click(object sender, EventArgs e)
+        {
+            FrmDuyuru frmDuyuru = new FrmDuyuru();
+            frmDuyuru.Show();
+        }
     }
 }

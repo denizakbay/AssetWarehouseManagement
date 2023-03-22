@@ -16,7 +16,7 @@ namespace AssetWarehouseManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmSıkSorulanSorular());
+            Application.Run(new FrmGiris());
         }
     }
 }

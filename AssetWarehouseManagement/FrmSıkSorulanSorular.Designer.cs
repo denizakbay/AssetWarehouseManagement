@@ -34,7 +34,7 @@
             // 
             // btnsss
             // 
-            this.btnsss.Location = new System.Drawing.Point(45, 85);
+            this.btnsss.Location = new System.Drawing.Point(12, 49);
             this.btnsss.Name = "btnsss";
             this.btnsss.Size = new System.Drawing.Size(65, 47);
             this.btnsss.TabIndex = 0;
@@ -46,9 +46,9 @@
             // 
             this.lstsss.FormattingEnabled = true;
             this.lstsss.ItemHeight = 16;
-            this.lstsss.Location = new System.Drawing.Point(246, 36);
+            this.lstsss.Location = new System.Drawing.Point(116, 36);
             this.lstsss.Name = "lstsss";
-            this.lstsss.Size = new System.Drawing.Size(542, 404);
+            this.lstsss.Size = new System.Drawing.Size(672, 404);
             this.lstsss.TabIndex = 1;
             this.lstsss.SelectedIndexChanged += new System.EventHandler(this.lstsss_SelectedIndexChanged);
             // 
