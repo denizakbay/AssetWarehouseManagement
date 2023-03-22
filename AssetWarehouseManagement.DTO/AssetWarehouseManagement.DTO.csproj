@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AnnouncementsDTO.cs" />
     <Compile Include="AssetDTO.cs" />
+    <Compile Include="AssetReportDTO.cs" />
     <Compile Include="SSSDTO.cs" />
     <Compile Include="UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

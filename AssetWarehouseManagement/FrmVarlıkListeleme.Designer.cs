@@ -42,6 +42,7 @@
             this.lblUserName = new System.Windows.Forms.Label();
             this.btnSSS = new System.Windows.Forms.Button();
             this.btnDuyurular = new System.Windows.Forms.Button();
+            this.BtnAramayaGit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -157,12 +158,23 @@
             this.btnDuyurular.UseVisualStyleBackColor = true;
             this.btnDuyurular.Click += new System.EventHandler(this.btnDuyurular_Click);
             // 
+            // BtnAramayaGit
+            // 
+            this.BtnAramayaGit.Location = new System.Drawing.Point(535, 37);
+            this.BtnAramayaGit.Name = "BtnAramayaGit";
+            this.BtnAramayaGit.Size = new System.Drawing.Size(70, 48);
+            this.BtnAramayaGit.TabIndex = 12;
+            this.BtnAramayaGit.Text = "Ara";
+            this.BtnAramayaGit.UseVisualStyleBackColor = true;
+            this.BtnAramayaGit.Click += new System.EventHandler(this.BtnAramayaGit_Click);
+            // 
             // FrmVarlıkListeleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1032, 733);
+            this.Controls.Add(this.BtnAramayaGit);
             this.Controls.Add(this.btnDuyurular);
             this.Controls.Add(this.btnSSS);
             this.Controls.Add(this.lblRole);
@@ -196,5 +208,6 @@
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Button btnSSS;
         private System.Windows.Forms.Button btnDuyurular;
+        private System.Windows.Forms.Button BtnAramayaGit;
     }
 }

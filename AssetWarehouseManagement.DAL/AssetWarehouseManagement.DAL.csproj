@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AnnouncementsDAL.cs" />
     <Compile Include="AssetDAL.cs" />
+    <Compile Include="AssetReportDAL.cs" />
     <Compile Include="IRepos\IRepository.cs" />
     <Compile Include="IRepos\ISelectRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

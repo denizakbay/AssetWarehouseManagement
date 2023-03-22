@@ -65,5 +65,11 @@ namespace AssetWarehouseManagement
             FrmDuyuru frmDuyuru = new FrmDuyuru();
             frmDuyuru.Show();
         }
+
+        private void BtnAramayaGit_Click(object sender, EventArgs e)
+        {
+            FrmFiltreListe frmFiltre = new FrmFiltreListe(user);
+            frmFiltre.Show();
+        }
     }
 }

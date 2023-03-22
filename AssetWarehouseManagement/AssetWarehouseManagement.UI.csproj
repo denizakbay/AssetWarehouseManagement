@@ -93,6 +93,9 @@
     <EmbeddedResource Include="FrmDuyuru.resx">
       <DependentUpon>FrmDuyuru.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFiltreListe.resx">
+      <DependentUpon>FrmFiltreListe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGiris.resx">
       <DependentUpon>FrmGiris.cs</DependentUpon>
     </EmbeddedResource>
