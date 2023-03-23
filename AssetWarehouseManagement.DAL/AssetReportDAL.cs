@@ -47,10 +47,10 @@ namespace AssetWarehouseManagement.DAL
             pro.ParametreEkle(parametreListem.ToArray());
 
             SqlDataReader reader = pro.ExcuteredaerOlustur();
-            List<AssetReportDTO> assetReportDTOs = new List<AssetReportDTO>(); //
+            List<AssetReportDTO> assetReportDTOs = new List<AssetReportDTO>(); 
             while (reader.Read())
             {
-                AssetReportDTO assetReportDTO = new AssetReportDTO(); //
+                AssetReportDTO assetReportDTO = new AssetReportDTO(); 
 
                 assetReportDTO.RegistrationNumber = (string)reader["RegistrationNumber"];
                 assetReportDTO.Barcode = (string)reader["Barcode"];
@@ -59,12 +59,12 @@ namespace AssetWarehouseManagement.DAL
                 assetReportDTO.Brand = (string)reader["Brand"];
                 assetReportDTO.Model = (string)reader["Model"];
 
-                assetReportDTOs.Add(assetReportDTO); //
+                assetReportDTOs.Add(assetReportDTO); 
 
 
             }
 
-            return assetReportDTOs; //
+            return assetReportDTOs; 
         }
     }
 }

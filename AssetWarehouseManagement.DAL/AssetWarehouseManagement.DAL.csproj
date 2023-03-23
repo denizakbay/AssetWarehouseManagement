@@ -44,8 +44,10 @@
     <Compile Include="AnnouncementsDAL.cs" />
     <Compile Include="AssetDAL.cs" />
     <Compile Include="AssetReportDAL.cs" />
+    <Compile Include="AssetUpdateDAL.cs" />
     <Compile Include="IRepos\IRepository.cs" />
     <Compile Include="IRepos\ISelectRepo.cs" />
+    <Compile Include="IRepos\IUpdateRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\MyBaseRepo.cs" />
     <Compile Include="SSSDAL.cs" />

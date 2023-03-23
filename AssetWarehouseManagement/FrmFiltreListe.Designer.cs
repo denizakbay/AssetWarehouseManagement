@@ -38,6 +38,12 @@
             this.txtBarkod = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAra = new System.Windows.Forms.Button();
+            this.btnKayitNo = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtKayitNo = new System.Windows.Forms.TextBox();
+            this.btnModel = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtModel = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lstFiltre
@@ -51,8 +57,8 @@
             this.columnHeader6});
             this.lstFiltre.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lstFiltre.HideSelection = false;
-            this.lstFiltre.Location = new System.Drawing.Point(0, 134);
-            this.lstFiltre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstFiltre.Location = new System.Drawing.Point(0, 275);
+            this.lstFiltre.Margin = new System.Windows.Forms.Padding(4);
             this.lstFiltre.Name = "lstFiltre";
             this.lstFiltre.Size = new System.Drawing.Size(1100, 428);
             this.lstFiltre.TabIndex = 0;
@@ -115,17 +121,75 @@
             this.btnAra.UseVisualStyleBackColor = true;
             this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
+            // btnKayitNo
+            // 
+            this.btnKayitNo.Location = new System.Drawing.Point(370, 152);
+            this.btnKayitNo.Name = "btnKayitNo";
+            this.btnKayitNo.Size = new System.Drawing.Size(96, 26);
+            this.btnKayitNo.TabIndex = 6;
+            this.btnKayitNo.Text = "Ara";
+            this.btnKayitNo.UseVisualStyleBackColor = true;
+            this.btnKayitNo.Click += new System.EventHandler(this.btnKayitNo_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 119);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(301, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Kayıt Numarasına Göre Arama Yap";
+            // 
+            // txtKayitNo
+            // 
+            this.txtKayitNo.Location = new System.Drawing.Point(8, 151);
+            this.txtKayitNo.Name = "txtKayitNo";
+            this.txtKayitNo.Size = new System.Drawing.Size(333, 27);
+            this.txtKayitNo.TabIndex = 4;
+            // 
+            // btnModel
+            // 
+            this.btnModel.Location = new System.Drawing.Point(925, 42);
+            this.btnModel.Name = "btnModel";
+            this.btnModel.Size = new System.Drawing.Size(96, 26);
+            this.btnModel.TabIndex = 9;
+            this.btnModel.Text = "Ara";
+            this.btnModel.UseVisualStyleBackColor = true;
+            this.btnModel.Click += new System.EventHandler(this.btnModel_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(563, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(228, 20);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Modeline Göre Arama Yap";
+            // 
+            // txtModel
+            // 
+            this.txtModel.Location = new System.Drawing.Point(563, 41);
+            this.txtModel.Name = "txtModel";
+            this.txtModel.Size = new System.Drawing.Size(333, 27);
+            this.txtModel.TabIndex = 7;
+            // 
             // FrmFiltreListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 562);
+            this.ClientSize = new System.Drawing.Size(1100, 703);
+            this.Controls.Add(this.btnModel);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtModel);
+            this.Controls.Add(this.btnKayitNo);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtKayitNo);
             this.Controls.Add(this.btnAra);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBarkod);
             this.Controls.Add(this.lstFiltre);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmFiltreListe";
             this.Text = "FrmFiltreListe";
             this.Load += new System.EventHandler(this.FrmFiltreListe_Load);
@@ -146,5 +210,11 @@
         private System.Windows.Forms.TextBox txtBarkod;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAra;
+        private System.Windows.Forms.Button btnKayitNo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtKayitNo;
+        private System.Windows.Forms.Button btnModel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtModel;
     }
 }

@@ -11,9 +11,17 @@ namespace AssetWarehouseManagement.Provider
 
     public class MSSQLProvider
     {
+        /// <summary>
+        /// SqlConnection nesnesi ve SqlCommand nesnesi tanımlanır ve bağlantı dizesi ve sorgu tanımlarıyla oluşturulur.
+        /// </summary>
         SqlConnection conn = null;
         SqlCommand cmd = null;
 
+        /// <summary>
+        /// MSSQLProvider sınıfının yapıcısı, bir SQL sorgusu ve bir bağlantı dizesi alır. Bağlantı dizesi, veritabanı sunucusu adını, veritabanı adını, kullanıcı adını ve şifreyi içerir.
+        /// </summary>
+        /// <param name="YapilamakIstenenQuery"></param>
+        /// <param name="Adres"></param>
         public MSSQLProvider(string YapilamakIstenenQuery, string Adres = "server=LAPTOP-2NTQ16BC;Database=Root;uid=sa;pwd=1234")
         {
             conn = new SqlConnection(Adres);
@@ -23,6 +31,9 @@ namespace AssetWarehouseManagement.Provider
             cmd.Connection = conn;
         }
 
+        /// <summary>
+        /// Close() metodunda, bağlantıyı kapatmak için kullanılır.
+        /// </summary>
         void Close()
         {
             if (conn.State == ConnectionState.Open)
@@ -31,6 +42,9 @@ namespace AssetWarehouseManagement.Provider
             }
 
         }
+        /// <summary>
+        /// Open() metodunda, bağlantıyı açmak için kullanılır.
+        /// </summary>
         void Open()
         {
             if (conn.State == ConnectionState.Closed)
@@ -40,7 +54,10 @@ namespace AssetWarehouseManagement.Provider
 
         }
 
-
+        /// <summary>
+        /// ExcutNon() metodunda, SqlCommand nesnesinin ExecuteNonQuery() yöntemi kullanılarak sorgu çalıştırılır ve etkilenen satır sayısı geri döndürülür.
+        /// </summary>
+        /// <returns></returns>
         public int ExcutNon()
         {
             int result = 0;
@@ -50,7 +67,7 @@ namespace AssetWarehouseManagement.Provider
 
                 Open();
                 result = cmd.ExecuteNonQuery();
-                
+
 
             }
             catch (Exception)
@@ -69,6 +86,10 @@ namespace AssetWarehouseManagement.Provider
 
         }
 
+        /// <summary>
+        /// ExecutScalar() metodunda, SqlCommand nesnesinin ExecuteScalar() yöntemi kullanılarak sorgu çalıştırılır ve tek bir değer döndürülür.
+        /// </summary>
+        /// <returns></returns>
         public object ExecutScalar()
         {
             object result = null;
@@ -91,10 +112,10 @@ namespace AssetWarehouseManagement.Provider
             return result;
         }
         /// <summary>
-        /// 
+        /// ExcuteredaerOlustur() metodunda, SqlCommand nesnesinin ExecuteReader() yöntemi kullanılarak sorgu çalıştırılır ve SqlDataReader nesnesi geri döndürülür.
         /// </summary>
         /// <returns></returns>
-        public SqlDataReader ExcuteredaerOlustur()//yukardakiyle aynı yukarda sadece try cach var
+        public SqlDataReader ExcuteredaerOlustur()
         {
             SqlDataReader rdr = null;
             try
@@ -109,20 +130,32 @@ namespace AssetWarehouseManagement.Provider
             }
             finally
             {
-                //   Close();
+
             }
 
             return rdr;
 
         }
 
+        /// <summary>
+        /// SqlParameter nesnesi, SQL sorgusunda kullanılacak parametre değerlerini depolar.
+        /// </summary>
+        /// <param name="sqlParameters"></param>
         public void ParametreEkle(SqlParameter[] sqlParameters)
         {
-            //cmd.Parameters.AddWithValue("GirilenKargo", Kargo);
+
             cmd.Parameters.AddRange(sqlParameters);
 
         }
 
-
+        /// <summary>
+        /// ExecuteNonQuery() metodunda, NotImplementedException hatası oluşturulur. Bu, bu yöntemin henüz uygulanmadığını belirtir.
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public int ExecuteNonQuery()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
